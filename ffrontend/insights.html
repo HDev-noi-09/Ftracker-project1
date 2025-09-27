@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Insights</title>
+    <link rel="stylesheet" href="insightstyle.css">
+</head>
+<body>
+    <header>
+        <h1>Your Expense Insights</h1>
+        <button onclick="window.location.href='ftracker.html'">Go Back</button>
+    </header>
+    <main id="Main">
+        <section id="insightsummary">
+            <h2>Summary</h2>
+            <p id="totalspent">
+                Loading total...
+            </p>
+            <p id="trend">
+                Loading trend...
+            </p>
+        </section>
+
+
+    <section id="category-breakdown">
+      <h2>Category Breakdown</h2>
+      <ul id="breakdown-list">
+      </ul>
+    </section>
+  
+    </main>
+    <script src="insights.js"></script>
+</body>
+</html>

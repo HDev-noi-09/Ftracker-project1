@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Tracker</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <h1 id="H1">Personal Finance Tracker</h1>
+    <div class="form-container">
+        <div class="tableing">
+    <form id="expense-form">
+        <input id="category" type="text" placeholder="Enter Category(eg.Shopping)">
+        <input id="amount" type="number" placeholder="Enter category expense(in $)"><br>
+        <button id="expbutton">Add Expense</button>
+
+        <h2 id="H2">👇Your Expenses👇</h2>
+        <table id="expensetable">
+            <thead>
+                <tr>
+                    <th><b>Category</b></th>
+                    <th><b>Expense</b></th>
+                    <th><b>Actions</b></th>
+                </tr>
+            </thead>
+            <tbody id="expensebody">
+                
+            </tbody>
+        </table>
+        <div>
+            <button type="button"
+            onclick="window.location.href='insights.html'" id="InsightButton">
+                View Insights
+            </button>
+        </div>
+    </form>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
