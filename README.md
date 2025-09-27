@@ -8,10 +8,10 @@ User can perform different operations with the app and maintain a record of thie
 ## Features
 - 1.User can add or insert the expenses he/she into a tabular format to have a list of expenses through a clean UI.
 
-- A user can also update the amount previously entered if thier is any need for alteration of records.
+- 2.A user can also update the amount previously entered if thier is any need for alteration of records.
   Moreover user can also delete any expense , which is no longer needed to be tracked , according to. 
 
-- Lastly ,user can see AI-like insights of weekly expense and a category breakdown of most and least spendings over various categories.
+- 3.Lastly ,user can see AI-like insights of weekly expense and a category breakdown of most and least spendings over various categories.
 
 ## Working 
 A very simple working where CRUD requests are being sent by frontend -UI(HTML and CSS) and JS -through fetch.
