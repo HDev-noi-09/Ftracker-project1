@@ -24,23 +24,23 @@ const getInsights=async(req,res)=>{
 
 
         const now=new Date();
-        let lastDay=new Date(now.setDate(now.getDate()-1));
-        let lastDayExpenses=expenses.filter(exp=>exp.createdAt && new Date(exp.createdAt)>=lastDay);
-        let prevDay=new Date(lastDay.setDate(lastDay.getDate()-1));
+        let lastWeek=new Date(now.setDate(now.getDate()-7));
+        let lastWeekExpenses=expenses.filter(exp=>exp.createdAt && new Date(exp.createdAt)>=lastWeek);
+        let prevWeek=new Date(lastWeek.setDate(lastWeek.getDate()-7));
       
-        let prevDayExpenses=expenses.filter(exp=>exp.createdAt && new Date(exp.createdAt) < lastDay && new Date(exp.createdAt) >= prevDay);
+        let prevWeekExpenses=expenses.filter(exp=>exp.createdAt && new Date(exp.createdAt) < lastWeek && new Date(exp.createdAt) >= prevWeek);
 
 
-        let lastDayTotal=lastDayExpenses.reduce((sum,exp)=>sum + exp.amount,0);
-         let prevDayTotal=prevDayExpenses.reduce((sum,exp)=>sum + exp.amount,0);
+        let lastWeekTotal=lastWeekExpenses.reduce((sum,exp)=>sum + exp.amount,0);
+         let prevWeekTotal=prevWeekExpenses.reduce((sum,exp)=>sum + exp.amount,0);
 
          let trendMessage="Not enough data to give insights..";
-         if(prevDayTotal>0){
-            let change=(((lastDayTotal-prevDayTotal)/prevDayTotal)*100).toFixed(2);
+         if(prevWeeTotal>0){
+            let change=(((lastWeekTotal-prevWeekTotal)/prevWeekTotal)*100).toFixed(2);
             trendMessage=change>0 ? `Your Expenses increased by ${change}% compared to last week!`:
             `Your Expenses decreased by ${Math.abs(change)}% compared to last week!`;
          }
-         console.log("Debug => total:", total, "breakdown:", categoryBreakdown, "last:", lastDayTotal, "prev:", prevDayTotal);
+         console.log("Debug => total:", total, "breakdown:", categoryBreakdown, "last:", lastWeekTotal, "prev:", prevWeekTotal);
 
          res.json({
             total:`You spent $${total} in total`,breakdown:categoryBreakdown,trend:trendMessage
