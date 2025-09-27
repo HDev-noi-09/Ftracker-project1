@@ -6,7 +6,7 @@ This project helps any user to keep a track over weekly expenses accoring to the
 User can perform different operations with the app and maintain a record of thier expenses. 
 
 ## Features
-- 1.User can add or insert the expenses he/she into a tabular format to have a list of expenses through a clean UI.
+- 1.User can add or insert the expenses he/she wants ,into a tabular format to have a list of expenses through a clean UI.
 
 - 2.A user can also update the amount previously entered if thier is any need for alteration of records.
   Moreover user can also delete any expense , which is no longer needed to be tracked , according to. 
