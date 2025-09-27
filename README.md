@@ -1,7 +1,7 @@
 # PERSONAL FINANCE TRACKER  
 
 ## Description
-Built a simple Personal Finance Tracker web app  using HTML , CSS , Node.js , Express.js , Postman(external use) and  MongoDB Atlas for data storage. 
+Built a simple Personal Finance Tracker web app  using HTML , CSS , Node.js , Express.js ,Postman(external use) and  MongoDB Atlas for data storage. 
 This project helps any user to keep a track over weekly expenses accoring to their core needs.
 User can perform different operations with the app and maintain a record of thier expenses. 
 
